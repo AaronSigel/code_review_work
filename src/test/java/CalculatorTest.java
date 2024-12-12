@@ -6,7 +6,10 @@ class CalculatorTest {
 
     @Test
     void add() {
-        //TODO inser your realisation in test-method add
+        Calculator calc = new Calculator();
+        assertEquals(5, calc.add(2, 3));
+        assertEquals(0, calc.add(-1, 1));
+        assertEquals(-10, calc.add(-5, -5));
     }
 
     @Test
